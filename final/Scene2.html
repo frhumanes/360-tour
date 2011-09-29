@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+	<head>
+		<title>DEMO 360º</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css" media="screen">
+		html, body { height:100%; background-color: #ffffff; font-family: Arial, Segoe, sans; }
+		body { margin:0; padding:0; overflow:auto; }
+		#flashContent { width:auto; height:550px; padding: 15px; background-color: #C0C0C0; -moz-border-radius: 15px; border-radius: 15px;}
+			
+		html  { width: 100%; text-align: center; }
+		body { margin: 0 auto; width: 1000px; text-align: center; padding: 0 px; }
+		h1 { font-size: 2.0em }
+		.column {width:280px;border-right:1px dashed #000; padding:10px; float:left; text-align:justify;}
+		.last { border-right:none; }
+        #test-content { padding: 0 40px; }
+		</style>
+		<script type="javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script language="javascript">
+			function showLayer() {
+				$("#test-content").append('Hola');
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>DEMO 360º TOUR</h1>
+		</div>
+		<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="900" height="550" id="Scene1" align="middle">
+				<param name="movie" value="Scene1.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="direct" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="always" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="Scene2.swf" width="900" height="550">
+					<param name="movie" value="Scene1.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="direct" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Obtener Adobe Flash Player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+		<div id="test-content">
+		<p>
+		<span class="column">
+		<b>About Seville</b><br />
+		Seville certainly is one of the most beloved places by visitors to Spain. 
+		Although today Moorish influence is architectonically most evident - Andalusia 
+		was occupied by Moors for about 800 years - it has been a cultural center long before. 
+		The fertility of this land and its favorised climate with mild winters and about 3000 
+		hours of sun per year made Phoenicians and Carthaginians settle here. Later came Romans, 
+		like almost to any place in Europe, and two of their emperors, Trajan and Hadrian, in fact were born here.
+		</span>
+		<span class="column">
+		<b>About the Cathedral, Alcázar and Archivo de Indias</b><br />
+		Together these three buildings form a remarkable monumental complex in the heart of Seville.
+		The cathedral and the Alcázar – dating from the Reconquest of 1248 to the 16th century and 
+		imbued with Moorish influences – are an exceptional testimony to the civilization of the 
+		Almohads as well as that of Christian Andalusia. The Giralda minaret is the masterpiece of 
+		Almohad architecture. It stands next to the cathedral with its five naves; the largest Gothic 
+		building in Europe, it houses the tomb of Christopher Columbus. The ancient Lonja, which became 
+		the Archivo de Indias, contains valuable documents from the archives of the colonies in the Americas.
+		</span>
+		<span class="column last">
+		<b>About the photo</b><br />
+		This animation was created with a 360 degree panorama using 9 images (x3) to get HDR (High Dynamic Range) effect and merged by Hugin application (opensource).
+		Finally the flash based application shows the photo and it adds the interactive experience.
+		<br />
+		All photos were taken with a Canon 50D and 17mm focal length on the same horizontal axis. The full quality photo can be viewed on <a href="http://www.flickr.com/photos/alvaropinel/5593480764/in/photostream" target="_blank">Flickr</a>
+		</span>
+		<p>
+		</div>
+	</body>
+</html>
